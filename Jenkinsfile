@@ -4,11 +4,14 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                if [[ "$var" == "v1" ]]  then
-                adausdasiudashdiusahdi
-                else
-                echo "${var}"
-                fi
+                script {
+                    if (env.var == 'v1') {
+                        easdsadas
+                    } else {
+                        echo '${var}'
+                    }
+                }
+          
             }
         }
     }
