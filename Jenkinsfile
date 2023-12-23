@@ -8,7 +8,7 @@ pipeline {
                     if (env.var == 'v1') {
                         easdsadas
                     } else {
-                        echo '${var}'
+                        echo "${var}"
                     }
                 }
           
